@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    border: 1px solid red;
+    background-color: #00BFFF;
+    /* min-width: 80%;
+    min-width: 100px; */
+}
+
+.navbar-container {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navbar-options {
+    display: flex;
+}
