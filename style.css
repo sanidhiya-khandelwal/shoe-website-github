@@ -5,6 +5,7 @@
 
 }
 
+
 .top-container {
     background-image: linear-gradient(to right bottom, #38c9f9 0%, white);
     padding-bottom: 5%;
@@ -25,7 +26,7 @@
 }
 
 .hamburger-menu {
-    width: 15%;
+    width: 14%;
     border: 4px solid black;
     display: none;
     flex-direction: column;
@@ -37,6 +38,7 @@
 
 .hamburger-menu span {
     border: 2px solid black;
+    width: 100%;
 }
 
 .hamburger-links {
@@ -168,6 +170,7 @@
     background-image: linear-gradient(to bottom, #4649FF 70%, #7978FF);
     border-radius: 9px;
     transition-duration: 0.5s;
+    box-shadow: 12px 12px 9px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -215,6 +218,7 @@
     background-image: linear-gradient(to bottom, #ED2B2A 70%, #F15A59);
     border-radius: 9px;
     transition-duration: 0.5s;
+    box-shadow: 12px 12px 9px rgba(0, 0, 0, 0.5);
 }
 
 .popular-sales-container-3 {
@@ -223,7 +227,8 @@
     padding: 1%;
     background-image: linear-gradient(to bottom, #C47AFF 70%, #F3CCFF);
     border-radius: 9px;
-    transition-duration: 0.5s
+    transition-duration: 0.5s;
+    box-shadow: 12px 12px 9px rgba(0, 0, 0, 0.5);
 }
 
 .popular-sales-container-1:hover,
@@ -243,6 +248,50 @@
     transform: rotate(0);
     transition-duration: 0.5s;
 }
+
+/* HIGHLIGHTS CONTAINER */
+.highlights-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 3.5%;
+}
+
+.highlights-details h3 {
+    font-size: 3rem;
+    color: #38c9f9;
+}
+
+.highlights-details h2 {
+    font-size: 3.5rem;
+}
+
+.highlights-details h4 {
+    font-size: 1.5rem;
+}
+
+.highlights-details button {
+    margin-top: 5%;
+    padding: 3%;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+}
+
+.highlights-shoe img {
+    width: 55%;
+    transform: rotate(15deg);
+    transition-duration: 0.3s;
+}
+
+.highlights-shoe img:hover {
+    width: 55%;
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
+}
+
 
 
 /* media queires */
@@ -275,7 +324,6 @@
     }
 
     .hero-section-gifs {
-        /* border: 5px solid green; */
         margin-top: 5%;
         margin-left: 5%;
     }
@@ -293,8 +341,12 @@
     /* HERO SECTION */
     .popular-sales-section-container {
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 30px;
         padding: 5%;
+    }
+
+    .popular-sales-section-heading h2 {
+        font-size: 2rem;
     }
 
     .popular-sales-details h4,
@@ -305,7 +357,6 @@
 
     .buying-details {
         padding: 5%;
-        /* border: 5px solid rebeccapurple; */
     }
 
     .buying-details a button {
@@ -326,8 +377,6 @@
     .popular-sales-container-3 {
         padding: 5%;
     }
-
-
 }
 
 @media(width<=1200px) and (width>600px) {
@@ -338,11 +387,79 @@
     /* HERO SECTION */
 
     .hero-section-gifs {
-        /* border: 5px solid green; */
         margin-top: 5%;
         margin-left: 5%;
     }
+}
 
-    /* POPULAR SALES */
+/* POPULAR SALES */
+@media(width<=1250px) and (width>600px) {
 
+    .popular-sales-section-container {
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 4%;
+    }
+
+    .popular-sales-container-1,
+    .popular-sales-container-2,
+    .popular-sales-container-3 {
+        padding: 1.5%;
+    }
+
+    .popular-sales-details svg {
+        width: 4.5%;
+    }
+}
+
+/* HIGHLIGHTS SECTION */
+@media(width<=1235px) {
+    .highlights-container {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .highlights-shoe {
+        display: flex;
+        justify-content: center;
+    }
+
+    .highlights-shoe img {
+        margin-top: 5%;
+    }
+}
+
+@media(width<=1005px) and (width>700px) {
+
+    .highlights-details h3 {
+        font-size: 3rem;
+    }
+
+    .highlights-details h2 {
+        font-size: 4rem;
+    }
+
+    .highlights-details h4 {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media(width<=700px) and (width>200px) {
+
+    .highlights-details h3 {
+        font-size: 1.4rem;
+    }
+
+    .highlights-details h2 {
+        font-size: 1.9rem;
+    }
+
+    .highlights-details h4 {
+        font-size: 1rem;
+    }
+
+    .highlights-details button {
+        padding: 2.5%;
+    }
 }
