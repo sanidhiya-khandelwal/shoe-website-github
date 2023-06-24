@@ -724,15 +724,145 @@
 /* featured container */
 .feature-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 2%;
+    align-items: center;
+    padding: 2% 3.5%;
+
+}
+
+/* .feature-details {
+    border: 5px solid red;
+} */
+
+.feature-shoe img {
+    width: 50%;
+    /* border: 5px solid green; */
+    margin-left: 45%;
+}
+
+.feature-details h3 {
+    font-size: 3rem;
+    color: #38c9f9;
+}
+
+.feature-details h2 {
+    font-size: 3.5rem;
+}
+
+.feature-details h4 {
+    font-size: 1.5rem;
+}
+
+.feature-details button {
+    margin-top: 5%;
+    padding: 3%;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
 }
 
 .feature-shoe img {
-    width: 60%;
+    width: 55%;
+    transform: rotate(15deg);
+    transition-duration: 0.3s;
 }
 
-.featured {
-    flex-direction: row-reverse;
-    /* gap: 90%; */
+.feature-shoe img:hover {
+    width: 55%;
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
+}
+
+
+@media(width<=1235px) {
+    .feature-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-shoe {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .feature-shoe img {
+        margin: 5% auto 0;
+        /* margin-top: 5%; */
+    }
+}
+
+
+@media(width<=1005px) and (width>700px) {
+
+    .feature-details h3 {
+        font-size: 2rem;
+    }
+
+    .feature-details h2 {
+        font-size: 2.8rem;
+    }
+
+    .feature-details h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(width<=700px) and (width>200px) {
+
+    .feature-details h3 {
+        font-size: 1.4rem;
+    }
+
+    .feature-details h2 {
+        font-size: 1.9rem;
+    }
+
+    .feature-details h4 {
+        font-size: 1rem;
+    }
+
+    .feature-details button {
+        padding: 2.5%;
+    }
+
+}
+
+/* Footer */
+.footer {
+    margin-top: 4%;
+    padding: 2% 0;
+    background-image: linear-gradient(to right bottom, #38c9f9 0%, #38c9f9);
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header {
+    color: #ffffff;
+    line-height: 2rem;
+}
+
+.copyright {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+@media(width<600px) {
+    .header h2 {
+        font-size: 0.8rem;
+    }
+
+    .header h3,
+    .copyright {
+        font-size: 0.8rem;
+    }
 }
