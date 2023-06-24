@@ -6,3 +6,10 @@ function myFunction() {
         hamburgerLinks.style.display = "none"
     }
 }
+
+const cart = () => {
+    const add = document.getElementsByClassName("buy")[0].innerHTML;
+    let count = document.getElementById('count-symbol').innerHTML;
+    let cartCount = parseInt(count) + 1;
+    document.getElementById('count-symbol').innerHTML = cartCount;
+}

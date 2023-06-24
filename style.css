@@ -58,6 +58,17 @@
     padding: 10px;
 }
 
+.addtocart {
+    position: relative;
+    /* background: #000; */
+}
+
+#count-symbol {
+    position: absolute;
+    left: 95%;
+    top: 1.8%;
+}
+
 
 
 
@@ -199,7 +210,7 @@
 
 }
 
-.buying-details a button {
+.buying-details button {
     background-color: #ffffff;
     padding: 3%;
     border-radius: 5px;
@@ -346,26 +357,28 @@
     }
 
     .popular-sales-section-heading h2 {
-        font-size: 2rem;
+        font-size: 2.7rem;
     }
 
     .popular-sales-details h4,
-    .popular-sales-details span,
-    .buying-details a button {
-        font-size: 0.8rem;
+    .popular-sales-details span {
+        font-size: 1rem;
     }
 
     .buying-details {
         padding: 5%;
     }
 
-    .buying-details a button {
+    .buying-details button {
         border-radius: 5px;
-        padding: 1.5%;
+        padding: 3%;
+        margin-bottom: 3%;
+        width: 100%;
+        font-size: 0.8rem;
     }
 
     .popular-sales-details h5 {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .popular-sales-section-heading h2 {
@@ -395,6 +408,11 @@
 /* POPULAR SALES */
 @media(width<=1250px) and (width>600px) {
 
+    .popular-sales-section-heading {
+        margin-top: 4%;
+        text-align: center;
+    }
+
     .popular-sales-section-container {
         flex-wrap: wrap;
         gap: 25px;
@@ -411,6 +429,40 @@
         width: 4.5%;
     }
 }
+
+
+@media(width<450px) {
+    .popular-sales-details svg {
+        width: 15%;
+    }
+}
+
+/*    .popular-sales-container-1,
+    .popular-sales-container-2,
+    .popular-sales-container-3 {
+        display: flex;
+        flex-direction: column;
+        padding: 12% 8%;
+        text-align: center;
+    }
+
+    .popular-sales-container-1 .buying-details button,
+    .popular-sales-container-2 .buying-details button,
+    .popular-sales-container-3 .buying-details button {
+        width: 20%;
+        border: 5px solid black;
+        padding: 1%;
+        margin-top: -10%;
+    }
+
+    .popular-sales-details h4 {
+        font-size: 2rem;
+    }
+
+    .popular-sales-details h5 {
+        font-size: 1rem;
+    }
+} */
 
 /* HIGHLIGHTS SECTION */
 @media(width<=1235px) {
@@ -432,15 +484,15 @@
 @media(width<=1005px) and (width>700px) {
 
     .highlights-details h3 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .highlights-details h2 {
-        font-size: 4rem;
+        font-size: 2.8rem;
     }
 
     .highlights-details h4 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -462,4 +514,225 @@
     .highlights-details button {
         padding: 2.5%;
     }
+
+}
+
+
+/* TOP RATED SALES */
+.top-rated-sales {
+    padding: 2%;
+}
+
+.top-rated-sales-heading h1 {
+    font-size: 3rem;
+}
+
+.top-rated-sales-container {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.top-rated-sales-row {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin-bottom: 2%;
+}
+
+.top-rated-card {
+    max-width: 20%;
+    height: 330px;
+    text-align: center;
+    padding: 1%;
+    border-radius: 19px;
+    color: #ffffff;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.3s;
+}
+
+.top-rated-card:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.top-rated-card h3 {
+    font-size: 1.5rem;
+}
+
+.top-rated-card h4 {
+    font-size: 1.3rem;
+}
+
+.top-rated-card span {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.tr-buying-details {
+    margin: 3% 0;
+}
+
+.tr-buying-details button {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 2%;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tr-image img {
+    margin-top: 7%;
+    width: 65%;
+    transform: rotate(12deg);
+    transition-duration: 0.3s;
+}
+
+.tr-image img:hover {
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
+}
+
+.card1 {
+    background-image: linear-gradient(to bottom, #205295 65%, #548aba);
+}
+
+.card2 {
+    background-image: linear-gradient(to bottom, #379237 65%, #B6E388);
+}
+
+.card3 {
+    background-image: linear-gradient(to bottom, #B70404 65%, #b95353);
+}
+
+.card4 {
+    background-image: linear-gradient(to bottom, #F86F03 65%, #FFE569);
+}
+
+.card5 {
+    background-image: linear-gradient(to bottom, #8d6c47 65%, #cfc3ab);
+}
+
+.card6 {
+    background-image: linear-gradient(to bottom, #5BC0F8 65%, #dfe7eb);
+}
+
+.card7 {
+    background-image: linear-gradient(to bottom, #FFC93C 65%, #f4eddc);
+}
+
+.card8 {
+    background-image: linear-gradient(to bottom, #C38154 65%, #dec5b5);
+}
+
+.card9 {
+    background-image: linear-gradient(to bottom, #892cb7 65%, #AD7BE9);
+}
+
+.card10 {
+    background-image: linear-gradient(to bottom, #8de30b 65%, #c4de9e);
+}
+
+.card11 {
+    background-image: linear-gradient(to bottom, #000000 65%, #251e1e);
+}
+
+.card12 {
+    background-image: linear-gradient(to bottom, #19376D 65%, #384764);
+}
+
+@media(width<=1200px) and (width>900px) {
+
+    .top-rated-sales-heading h1 {
+        margin: 4% 0;
+    }
+
+    .top-rated-sales-row {
+        justify-content: space-between;
+        margin-bottom: 5%;
+
+    }
+
+    .top-rated-card {
+        width: 50%;
+        height: 340px;
+        padding: 2%;
+    }
+
+    .top-rated-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .top-rated-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .top-rated-card span {
+        font-size: 1.3rem;
+    }
+
+    .top-rated-card svg {
+        width: 15%;
+    }
+
+    .tr-buying-details {
+        margin: 5% 0;
+    }
+
+    .tr-buying-details button {
+        width: 60%;
+        padding: 3.5%;
+        margin-bottom: 5%;
+        font-size: 0.8rem;
+    }
+
+    .tr-image img {
+        width: 85%;
+    }
+}
+
+@media(width<=900px) {
+    .top-rated-sales-heading {
+        margin: 4% 0;
+        text-align: center;
+    }
+
+    .top-rated-sales-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .top-rated-card {
+        padding: 4%;
+        min-width: 300px;
+        flex-basis: 40%;
+        margin-bottom: 4%;
+    }
+}
+
+@media(width<=600px) {
+
+    .top-rated-sales-heading h1,
+    .popular-sales-section-heading h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* featured container */
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.feature-shoe img {
+    width: 60%;
+}
+
+.featured {
+    flex-direction: row-reverse;
+    /* gap: 90%; */
 }
